@@ -14,6 +14,7 @@ public class SimpleCalculator {
 	public static void main(String[] args) throws IOException {
 		Scanner scanner = new Scanner(System.in);
 		boolean i = true;
+		int x, y;
 
 		while (i) {
 			System.out.println('\n' + "[Simple Calculator]");
@@ -32,6 +33,15 @@ public class SimpleCalculator {
 			case 4:
 				break;
 			case 5:
+				System.out.println("Enter x y:");
+				x = scanner.nextInt();
+				y = scanner.nextInt();
+				while((x<0) || (y<0)){
+					System.out.println("Enter x y:");
+					x = scanner.nextInt();
+					y = scanner.nextInt();
+				}
+				result =nSqure(x,y);	
 				break;
 			case 6:
 				break;
@@ -39,7 +49,7 @@ public class SimpleCalculator {
 				break;
 			case 8:
 				System.out.println("Enter x:");
-				int x = scanner.nextInt();
+				x = scanner.nextInt();
 				while(x<0){
 					System.out.println("Enter x:");
 					x = scanner.nextInt();
