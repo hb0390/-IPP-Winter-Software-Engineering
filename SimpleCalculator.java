@@ -17,7 +17,7 @@ public class SimpleCalculator {
 		int x, y;
 
 		while (i) {
-			System.out.println('\n' + "[Simple Calculator]");
+			System.out.println('\n' + "[ Simple Calculator ]");
 			System.out.println("1. x+y" + '\n' + "2. x-y" + '\n' + "3. x*y"
 					+ '\n' + "4. x/y" + '\n' + "5. x^y" + '\n' + "6. x!" + '\n'
 					+ "7. x^2" + '\n' + "8. 10^x" + '\n' + "0. Quit" + '\n');
