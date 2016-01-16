@@ -48,7 +48,7 @@ public class SimpleCalculator {
 			case 7:
 				break;
 			case 8:
-				System.out.println("Enter x:");
+				System.out.println("Enter x: ");
 				x = scanner.nextInt();
 				while(x<0){
 					System.out.println("Enter x:");
