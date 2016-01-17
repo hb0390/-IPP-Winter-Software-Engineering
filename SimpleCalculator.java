@@ -25,6 +25,12 @@ public class SimpleCalculator {
 			int num = scanner.nextInt();
 			switch (num) {
 			case 1:
+                                System.out.println("Enter x:");
+				x = scanner.nextInt();
+                                System.out.println("Enter y:");
+				y = scanner.nextInt();
+                                
+                                result = add (x,y);
 				break;
 			case 2:
 				break;
