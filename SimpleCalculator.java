@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class SimpleCalculator {
 	public static double result;
 
-        public static int add (int x, int y) {
+        public static double add (int x, int y) {
                return x + y;
         }
 
@@ -30,15 +30,19 @@ public class SimpleCalculator {
 			switch (num) {
 			
                          case 1:
-                                System.out.println("Enter x: \n");
+            			System.out.println("Enter x: ");
 				x = scanner.nextInt();
-                                System.out.println("Enter y: \n");
+                                System.out.println("Enter y: ");
 				y = scanner.nextInt();
-                                
-                                result = add (x,y);
-		        	System.out.printf("Result: %d \n", result );
+				while(x<0){
+					System.out.println("Enter x: ");
+				        x = scanner.nextInt();
+                                        System.out.println("Enter y: ");
+				        y = scanner.nextInt();
+				}
+				result = add(x,y);
+				System.out.println("Result:  " + result);
 				break;
-
 			case 2:
 				break;
 			case 3:
@@ -54,7 +58,6 @@ public class SimpleCalculator {
 					x = scanner.nextInt();
 					y = scanner.nextInt();
 				}
-				result =nSqure(x,y);	
 				break;
 			case 6:
 				break;
