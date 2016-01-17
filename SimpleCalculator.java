@@ -4,6 +4,10 @@ import java.util.Scanner;
 public class SimpleCalculator {
 	public static double result;
 
+        public static int add (int x, int y) {
+               return x + y;
+        }
+
 	public static double SquareRootOfTen(int x) {
 		double result = 1;
 		for (int i = 0; i < x; i++)
@@ -24,14 +28,17 @@ public class SimpleCalculator {
 			System.out.printf("Select a menu:");
 			int num = scanner.nextInt();
 			switch (num) {
-			case 1:
-                                System.out.println("Enter x:");
+			
+                         case 1:
+                                System.out.println("Enter x: \n");
 				x = scanner.nextInt();
-                                System.out.println("Enter y:");
+                                System.out.println("Enter y: \n");
 				y = scanner.nextInt();
                                 
                                 result = add (x,y);
+		        	System.out.printf("Result: %d \n", result );
 				break;
+
 			case 2:
 				break;
 			case 3:
