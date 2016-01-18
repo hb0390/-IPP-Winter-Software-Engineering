@@ -13,7 +13,7 @@ public class SimpleCalculator {
 		return x - y;
 	}
 
-	public static double mul (int x, int y) {
+	public static double mul(int x, int y) {
       		
 		return x*y;
    	}
@@ -135,7 +135,7 @@ public class SimpleCalculator {
 					System.out.println("Enter x:");
 					x = scanner.nextInt();
 				}
-				result = SquareRootOfTen(x);
+				result = squareRootOfTen(x);
 				System.out.println("Result:  " + result);
 				break;
 			case 0:
