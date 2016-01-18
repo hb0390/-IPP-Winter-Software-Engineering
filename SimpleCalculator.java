@@ -9,8 +9,14 @@ public class SimpleCalculator {
 	}
 
 	public static double sub(int x, int y) {
+
 		return x - y;
 	}
+
+	public static double mul (int x, int y) {
+      		
+		return x*y;
+   	}
 
 	public static double divide(int x, int y) {
 		return x / y;
@@ -77,7 +83,24 @@ public class SimpleCalculator {
 
 				break;
 			case 3:
-				break;
+
+				 System.out.println("Enter x: ");
+          			  x = scanner.nextInt();
+           			 System.out.println("Enter y: ");
+           			 y = scanner.nextInt();
+
+           			 while ((x < 0) || (y < 0)) {
+              			 System.out.println("Enter x: ");
+             			 x = scanner.nextInt();
+             			 System.out.println("Enter y: ");
+              			 y = scanner.nextInt();
+           			 }
+
+         		   	result = mul(x,y);
+         		   	System.out.println("Result:  " + result);
+
+         		  	break;
+
 			case 4:
 				System.out.println("Enter x: ");
 				x = scanner.nextInt();
@@ -93,7 +116,7 @@ public class SimpleCalculator {
 				x = scanner.nextInt();
 				System.out.println("Enter y: ");
 				y = scanner.nextInt();
-				while ((x <= 0) || (y <= 0)) {
+				while ((x < 0) || (y < 0)) {
 					System.out.println("Enter x: ");
 					x = scanner.nextInt();
 					System.out.println("Enter y: ");
