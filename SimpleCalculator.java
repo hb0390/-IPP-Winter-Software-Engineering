@@ -8,6 +8,10 @@ public class SimpleCalculator {
                return x + y;
         }
 
+	public static double sub (int x, int y) {
+		return x - y;
+	}
+
 	public static double SquareRootOfTen(int x) {
 		double result = 1;
 		for (int i = 0; i < x; i++)
@@ -44,6 +48,21 @@ public class SimpleCalculator {
 				System.out.println("Result:  " + result);
 				break;
 			case 2:
+				System.out.println("Enter x: ");
+				x = scanner.nextInt();
+				System.out.println("Enter y: ");
+				y = scanner.nextInt();
+
+				while ((x <= 0) || (y <= 0)) {
+					System.out.println("Enter x: ");
+					x = scanner.nextInt();
+					System.out.println("Enter y: ");
+					y = scanner.nextInt();
+				}
+
+				result = sub(x,y);
+				System.out.println("Result:  " + result);
+
 				break;
 			case 3:
 				break;
