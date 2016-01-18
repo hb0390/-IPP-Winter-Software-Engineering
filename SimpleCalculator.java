@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class SimpleCalculator {
 	public static double result;
 
-	public double add(int x, int y) {
+	public static double add(int x, int y) {
 		return x + y;
 	}
 
@@ -12,7 +12,7 @@ public class SimpleCalculator {
 		return x - y;
 	}
 
-	public double SquareRootOfTen(int x) {
+	public static double squareRootOfTen(int x) {
 		double result = 1;
 		for (int i = 0; i < x; i++)
 			result = result * 10;
@@ -100,7 +100,7 @@ public class SimpleCalculator {
 					System.out.println("Enter x:");
 					x = scanner.nextInt();
 				}
-				result = SquareRootOfTen(x);
+				result = squareRootOfTen(x);
 				System.out.println("Result:  " + result);
 				break;
 			case 0:
