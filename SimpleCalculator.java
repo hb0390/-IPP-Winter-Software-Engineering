@@ -32,6 +32,10 @@ public class SimpleCalculator {
 		return x / y;
 	}
 
+	public static int Square(int x) {
+		return x*x;
+	}
+
 	public static double factorial(int x) {
 		double result = 0;
 		if (x == 1)
@@ -173,6 +177,14 @@ public class SimpleCalculator {
 				System.out.println("Result: " + result);
 				break;
 			case 7:
+				System.out.println("Enter x: ");
+				x = scanner.nextInt();
+				while(x<0) {
+					System.out.println("Enter x: ");
+					x = scanner.nextInt();
+				}
+				result = Square(x);
+				System.out.println("Result: " + result);
 				break;
 			case 8:
 				System.out.println("Enter x: ");
