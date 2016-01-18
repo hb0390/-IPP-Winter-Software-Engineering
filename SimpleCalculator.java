@@ -12,6 +12,10 @@ public class SimpleCalculator {
 		return x - y;
 	}
 
+	public static double divide(int x, int y) {
+		return x / y;
+	}
+
 	public static double SquareRootOfTen(int x) {
 		double result = 1;
 		for (int i = 0; i < x; i++)
@@ -75,6 +79,14 @@ public class SimpleCalculator {
 			case 3:
 				break;
 			case 4:
+				System.out.println("Enter x: ");
+				x = scanner.nextInt();
+				System.out.println("Enter y: ");
+				y = scanner.nextInt();
+
+				result = divide(x, y);
+				System.out.println("Result : " + result);
+				
 				break;
 			case 5:
 				System.out.println("Enter x: ");
