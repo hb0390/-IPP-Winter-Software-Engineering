@@ -10,9 +10,11 @@ public class SimpleCalculator {
 <<<<<<< HEAD
 
 	public static double sub(int x, int y) {
+
 		return x - y;
 	}
 
+<<<<<<< HEAD
 	public static double squareRootOfTen(int x) {
 =======
 
@@ -37,6 +39,15 @@ public class SimpleCalculator {
 		else
 			result = x * factorial(x - 1);
 		return result;
+=======
+	public static double mul (int x, int y) {
+      		
+		return x*y;
+   	}
+
+	public static double divide(int x, int y) {
+		return x / y;
+>>>>>>> db6f2c32639169b34f46de5f326b9bbaee22b583
 	}
 
 	public static double SquareRootOfTen(int x) {
@@ -135,10 +146,14 @@ public class SimpleCalculator {
 				System.out.println("Enter y: ");
 				y = scanner.nextInt();
 <<<<<<< HEAD
+<<<<<<< HEAD
 				while ((x <= 0) || (y <= 0)) {
 =======
 				while ((x < 0) || (y < 0)) {
 >>>>>>> factorial
+=======
+				while ((x < 0) || (y < 0)) {
+>>>>>>> db6f2c32639169b34f46de5f326b9bbaee22b583
 					System.out.println("Enter x: ");
 					x = scanner.nextInt();
 					System.out.println("Enter y: ");
