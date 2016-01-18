@@ -22,6 +22,15 @@ public class SimpleCalculator {
 		return x / y;
 	}
 
+	public static double factorial(int x) {
+		double result = 0;
+		if (x == 1)
+			result = 1;
+		else
+			result = x * factorial(x - 1);
+		return result;
+	}
+
 	public static double SquareRootOfTen(int x) {
 		double result = 1;
 		for (int i = 0; i < x; i++)
@@ -125,6 +134,15 @@ public class SimpleCalculator {
 				System.out.println("Result:  " + result*10);
 				break;
 			case 6:
+				System.out.println("Enter x: ");
+				x = scanner.nextInt();
+				while (x < 0) {
+					System.out.println("Enter x: ");
+					x = scanner.nextInt();
+				}
+
+				result = factorial(x);
+				System.out.println("Result: " + result);
 				break;
 			case 7:
 				break;
