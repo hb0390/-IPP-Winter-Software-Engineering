@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 
+
 public class SimpleCalculator {
 	public static double result;
 
@@ -147,7 +148,6 @@ public class SimpleCalculator {
 					System.out.println("Enter x: ");
 					x = scanner.nextInt();
 				}
-
 				result = factorial(x);
 				System.out.println("Result: " + result);
 				break;
