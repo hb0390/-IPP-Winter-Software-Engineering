@@ -18,7 +18,7 @@ public class SimpleCalculator {
     return x*y;
   }
  
-  public static double divide(int x, int y) {
+  public static double divide(double x, double y) {
     return x / y;
   }
   
