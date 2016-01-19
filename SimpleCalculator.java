@@ -79,6 +79,7 @@ public class SimpleCalculator {
         break;
 
       case 2:
+
         System.out.println("Enter x: ");
         x = scanner.nextInt();
         System.out.println("Enter y: ");
