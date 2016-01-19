@@ -103,7 +103,7 @@ public class SimpleCalculator {
        				y = scanner.nextInt();
  
         			while ((x < 0) || (y < 0)) {
-          System.out.println("Enter x: ");
+         			System.out.println("Enter x: ");
           x = scanner.nextInt();
           System.out.println("Enter y: ");
           y = scanner.nextInt();
