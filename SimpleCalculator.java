@@ -8,8 +8,8 @@ public class SimpleCalculator {
     return x + y;
   }
 
-  public static double subtract(int x, int y) {
 
+  public static double subtract(int x, int y) {
     return x - y;
   }
  
