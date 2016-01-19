@@ -99,7 +99,7 @@ public class SimpleCalculator {
  
  				System.out.println("Enter x: ");
      				x = scanner.nextInt();
-        System.out.println("Enter y: ");
+      				System.out.println("Enter y: ");
         y = scanner.nextInt();
  
         while ((x < 0) || (y < 0)) {
