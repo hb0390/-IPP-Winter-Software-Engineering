@@ -35,7 +35,7 @@ public class SimpleCalculator {
     return result;
   }
 
- 	public static double SquareRootOfTen(int x) {
+  public static double SquareRootOfTen(int x) {
     double result = 1;
     for (int i = 0; i < x; i++)
       result = result * 10;
