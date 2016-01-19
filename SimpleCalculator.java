@@ -9,7 +9,6 @@ public class SimpleCalculator {
   }
 
   public static double subtract(nt x, int y) {
-
     return x - y;
   }
  
